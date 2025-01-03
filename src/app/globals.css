@@ -3,19 +3,31 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+   :root {
+   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+   font-family: "Playfair Display", serif;
+   text-align: center;
+   font-variant-numeric: lining-nums;
+   font-feature-settings: "lnum";
+   -webkit-tap-highlight-color: transparent;
 }
+h1,
+h2,
+h3 {
+   font-family: "Playfair Display", serif;
+}
+p {
+   font-family: "roboto", sans-serif;
+   color: #787878;
+   line-height: 28px;
+   font-size: 16px;
+}
+/* .service-item:nth-child(odd) {
+   flex-direction: row-reverse;
+} */
